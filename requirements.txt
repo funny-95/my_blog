@@ -2,3 +2,4 @@ django
 djangorestframework
 django-model-utils
 pymysql
+django-rest-swagger
