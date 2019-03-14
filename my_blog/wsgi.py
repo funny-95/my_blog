@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "my_blog.settings")
+env = os.environ.setdefault("DJANGO_ENV", "development")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "drf_fennwords.settings." + env)
 
 application = get_wsgi_application()
